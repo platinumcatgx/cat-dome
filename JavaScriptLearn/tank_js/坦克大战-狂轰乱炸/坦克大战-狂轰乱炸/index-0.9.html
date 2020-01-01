@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>坦克大战-v0.9</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var BEIJING = "#222";
+		var width = screen.width;
+		var height = screen.height;
+		var can = document.createElement("canvas");
+		can.width = 1100;
+		can.height = 700;
+		can.style.position = "absolute";
+		can.style.backgroundColor = BEIJING;
+		can.style.left = (width - can.width) / 2 + "px";
+		document.body.appendChild(can);
+		
+		var g = can.getContext("2d");
+		var UNIT 	= 0;		// 每个物体的编号
+		var WOJUN 	= "我军";
+		var QIANG 	= "墙";
+		var CMD		= "指挥官";
+		var DIJUN 	= "敌军";
+		var ZIDAN	= "子弹";
+		var DILEI	= "地雷";
+		var DAOJU	= "道具";
+		var TUPIAN	= "图片";
+		
+		var TANK_W = 40;
+		var TANK_H = 40;
+		var DI_W = 40;
+		var DI_H = 40;
+		var WO_IMG = "img/tU.gif";
+		var DI_IMG = "img/dD.gif";
+		
+		var MM_W = 50;
+		var MM_H = 70;
+		
+		var WALL_W = 30;
+		var WALL_H = 30;
+		var zt = ["未开始", "激战", "暂停", "胜利", "失败", "冰冻", "被冰冻", "无敌", "待复活"];
+		var wallcount = 20;			// 墙块数量
+		var enemycount = 15;		// 敌军数量
+		var jianmie	= 0;			// 歼灭数量
+		var zhuangtai = zt[0];		// 游戏默认状态 
+		
+		function Stage(){
+			this.data = [];
+		}
+		
+		Stage.prototype.add = function(o){
+			this.data.push(o);	// 把对象o扔进数组
+		}
+		
+		Stage.prototype.remove = function(o){
+			var index = this.data.indexOf(o);
+			if ( index != -1 ){
+				this.data.splice(index, 1);		// 从数组中删除一个元素
+			}
+		}
+		
+		Stage.prototype.render = function(){	// 屏幕重复渲染
+			var list = this.data;
+			function loop(){
+				// 清屏
+				g.fillStyle = BEIJING;
+				g.fillRect(0, 0, can.width , can.height );
+				
+				list.forEach(function(o){
+					o.show();
+				});
+				
+				huabeijing();	huaxinxi();	 huashuoming();		huazuozhe();
+				
+				requestAnimationFrame(loop);
+			}
+			
+			loop();
+		}
+		
+		function huabeijing() {
+			var x = (can.width-90*4) / 2 , y = can.height/2 + 50;
+			g.fillStyle = "#333";
+			g.font = "90px 楷体";
+			g.fillText( "坦克大战", x, y );
+		}
+		
+		function huaxinxi() {
+			var x = 20, y = 30;
+			g.fillStyle = "#DDD";
+			g.font = "14px 微软雅黑";
+			g.fillText( "敌军数量: " + enemycount, x, y );	x += 100;
+			g.fillText( "歼灭数量: " + jianmie, x, y );	x += 100;
+			g.fillText( "生命值: "   + wo.life, x, y );	x += 100;
+			g.fillText( "复活机会: " + wo.fuhuo, x, y );	x += 100;
+			g.fillText( "攻: " 		+ wo.gong, x, y );	x += 60;
+			g.fillText( "防: " 		+ wo.fang, x, y );	x += 60;
+			g.fillText( "移动速度: " + wo.speed, x, y );	x += 100;
+			g.fillText( "可用地雷: " + wo.dilei, x, y );	x += 150;
+			g.fillText( "游戏状态: " , x, y );	x += 70;
+			g.fillStyle = "coral";
+			g.fillText( zhuangtai, x, y );	x += 100;
+		}
+		
+		function huashuoming() {
+			var x = 30, y = 300;
+			g.fillStyle = "#666";
+			g.font = "18px 楷体";
+			g.fillText( "操作说明", x + 15, y );			y += 25;
+			g.font = "13px 宋体";
+			g.fillText( "发射子弹: 空格", x, y );		y += 25;
+			g.fillText( "暂停游戏: P", x, y );		y += 25;
+			g.fillText( "复活坦克: R", x, y );		y += 25;
+			g.fillText( "埋放地雷: B", x, y );		y += 25;
+		}
+		
+		function huazuozhe() {
+			var x = 30, y = can.height-10;
+			g.fillStyle = "#777";
+			g.font = "13px 宋体";
+			g.fillText( "作者微信: wuhan2019", x, y );
+		}
+		
+		
+		/**父类**/
+		function Base(x, y, w, h, src, type) {
+			this.x = x;
+			this.y = y;
+			this.w = w;
+			this.h = h;
+			this.src = src;				// 图片名
+			this.type = type;			// 类别
+			this.life = 100;			// 生命值
+			this.index = UNIT ++;		// 唯一的编号
+			this.img = new Image();
+			this.img.src = this.src;
+			this.show = function(){
+				g.drawImage(this.img, this.x, this.y, this.w, this.h);
+				if ( this.type == WOJUN || this.type == DIJUN || this.type == QIANG || this.type == CMD ){
+					this.blood();
+				}
+			}
+			this.die = function(){
+				this.life = 0;
+				stage.remove(this);
+			}
+		}
+		
+		function Youxuetiao(x, y, w, h, src, type) {
+			var o = new Base(x, y, w, h, src, type);
+			o.blood = function(){		// 绘制本对象的血条
+				if ( o.life <= 0 ) return;
+				g.fillStyle = "red";
+				if ( o.life > 80 ) g.fillStyle = "springgreen";
+				else if ( o.life > 60 ) g.fillStyle = "yellow";
+				else if ( o.life > 40 ) g.fillStyle = "orangered";
+				g.fillRect(o.x, o.y-5, o.life / 100 * o.w , 5);
+			}
+			return o;
+		}
+		
+		function Command(x, y, fang ){
+			var o = new Youxuetiao(x, y, MM_W, MM_H, "img/p1.gif", CMD);
+			o.fang = fang;
+			return o;
+		}
+		
+		function Wall(x, y, fang) {
+			var o = new Youxuetiao(x, y, WALL_W, WALL_H, "img/qiang.gif", QIANG);
+			o.fang = fang;
+			return o;
+		}
+		
+		function Tank(x, y, w, h, src, type, speed, gong, fang, dir){
+			var o = new Youxuetiao(x, y, w, h, src, type);
+			o.speed = speed;
+			o.gong = gong;
+			o.fang = fang;
+			o.dir = dir;		// 坦克的坦向 0123 上下左右
+			o.left = false;
+			o.right = false;
+			o.up = false;
+			o.down = false;
+			return o;
+		}
+		function Wojun(x, y) {
+			var o = new Tank(x, y, TANK_W, TANK_H, WO_IMG, WOJUN, 3, 0, 0, 0);
+			o.dilei = 2;
+			o.fuhuo = 3;
+			return o;
+		}
+		function Dijun(x, y) {
+			var o = new Tank(x, y, DI_W, DI_H, DI_IMG, DIJUN, 3, 0, 0, 1);
+			return o;
+		}
+		
+		function initWall(){
+			var x = (can.width - wallcount * WALL_W) / 2;
+			var y = 150;
+			for ( var i = 0; i < wallcount; i ++ ){
+				var o = new Wall(x, y, 2);
+				stage.add(o);	x += WALL_W;
+			}
+		}
+		
+		function initEnemy(){
+			var x = (can.width - enemycount * DI_W - enemycount * 5) / 2;
+			var y = 80;
+			for ( var i = 0; i < enemycount; i ++ ){
+				var o = new Dijun(x, y);
+				stage.add(o);	x += DI_W + 5;
+			}
+		}
+		
+		function initHome(){
+			var x = mm.x - 35, y = mm.y - 35;
+			var o = new Wall(x, y, 3);
+			stage.add(o);	x += WALL_W;
+			
+			o = new Wall(x, y, 3);
+			stage.add(o);	x += WALL_W;
+			
+			o = new Wall(x, y, 3);
+			stage.add(o);	x += WALL_W;
+			
+			o = new Wall(x, y, 3);
+			stage.add(o);	x += WALL_W;
+			
+			x = mm.x - 35, y = y + WALL_H;
+			
+			o = new Wall(x, y, 3);
+			stage.add(o);	x += WALL_W*3;
+			o = new Wall(x, y, 3);
+			stage.add(o);	x += WALL_W*3;
+			
+			x = mm.x - 35, y = y + WALL_H;
+			
+			o = new Wall(x, y, 3);	o.h += 15;
+			stage.add(o);	x += WALL_W*3;
+			o = new Wall(x, y, 3);	o.h += 15
+			stage.add(o);	x += WALL_W*3;
+		}
+		
+		// 定义一个存储器对象
+		var stage = new Stage();
+		
+		var wo = new Wojun(300, 600);
+		var mm = new Command((can.width-MM_W)/2, (can.height-MM_H), 2);
+		
+		stage.add(wo);
+		stage.add(mm);
+		
+		// 构造一排障碍墙
+		initWall();
+		
+		// 构造一排敌军
+		initEnemy();
+		
+		// 构造指挥部
+		initHome();
+		
+		stage.render();
+		
+//		setTimeout(function(){
+//			d.die();
+//		}, 1000);
+	</script>
+</html>

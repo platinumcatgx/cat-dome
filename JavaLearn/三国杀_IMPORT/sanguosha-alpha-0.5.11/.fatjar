@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Mar 29 22:20:34 CST 2013
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=D\:\\sgs.jar
+manifest.mergeall=true
+manifest.mainclass=com.wfysyfs.sgs.Main
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=file\:/
+excludes=
+includes=

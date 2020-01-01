@@ -1,0 +1,12 @@
+INSERT INTO `user` VALUES (0, '0', '0');
+INSERT INTO `user` VALUES (1, '1', '1');
+INSERT INTO `user` VALUES (2, '2', '2');
+INSERT INTO `user` VALUES (3, '3', '3');
+INSERT INTO `user` VALUES (4, '4', '4');
+INSERT INTO `user` VALUES (5, '5', '5');
+INSERT INTO `user` VALUES (6, '6', '6');
+INSERT INTO `user` VALUES (7, '7', '7');
+INSERT INTO `user` VALUES (8, '8', '8');
+INSERT INTO `user` VALUES (9, '9', '9');
+INSERT INTO `user` VALUES (10, '10', '10');
+INSERT INTO `user` VALUES (11, '11', '11');

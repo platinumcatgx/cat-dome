@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    width: 1024px;
+    height: 768px;
+    background: url("../images/spaceship_reference.jpg") no-repeat;
+    background-size: cover;
+    margin: 50px auto;
+    position: relative;
+}
+.box2{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    /*position: absolute;*/
+    border-radius: 15px;
+    background-color: white;
+    opacity: 0.7;
+    position: relative;
+    top: 80px;
+    /*display: none;*/
+}
+.box2 h2{
+    text-align: center;
+    color: #ff4f19;
+}
+.box2 p{
+    text-align: left;
+    margin-left: 50px;
+    line-height: 30px;
+}
+.box2 img{
+    width: 130px;
+    position: absolute;
+    top: 18px;
+    left: 650px;
+}
+.button{
+    width: 80px;
+    height: 30px;
+    background-color: #ff4f19;
+    border: 0;
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    border-radius: 5px;
+}
+.button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.box3{
+    width: 1024px;
+    height: 768px;
+    position: relative;
+    background: url("../images/background-2.jpg") no-repeat;
+    background-position-x: 0px;
+    background-size: cover;
+    display: none;
+    animation: move 15s infinite linear;
+    overflow: hidden;
+    display: none;
+}
+@keyframes move {
+    from{
+        background-position-x: 0px;
+    }to{
+        background-position-x: -350px;
+    }
+}
+.box4{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.box4 img{
+    height: 60px;
+    margin-left: 10px;
+}
+.sj{
+    width: 100px;
+    height: 60px;
+    background: url("../ps/时间.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+ }
+.fs{
+    width: 100px;
+    height: 60px;
+    background: url("../ps/ps-2.png") no-repeat;
+    background-size: cover;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+}
+.nlf{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.nlz{
+    width: 120px;
+    height: 50px;
+    background-color: #ff4f19;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    /*transition: all 0.5s;*/
+}
+.imgss{
+    height: 60px;
+    width: 300px;
+    margin-left: 220px;
+}
+.hj{
+    height: 80px;
+    width: 80px;
+    background: url("../images/ship_3.png") no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: hj 500ms steps(4) infinite;
+}
+@keyframes hj {
+    from{
+        background-position-x: 0;
+    }to{
+       background-position-x: -320px;
+         }
+}
+.zd{
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    background: url("../images/zd.png") no-repeat;
+    background-size: cover;
+}
+.drzd{
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    left: 1024px;
+    top: 60px;
+    background: url("../images/drzd.png") no-repeat;
+    background-size: cover;
+}
+.dr{
+    height: 80px;
+    width: 80px;
+    background: url("../images/ship_1.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 1024px;
+    animation: hj 500ms steps(4) infinite;
+}
+.ff{
+    height: 80px;
+    width: 80px;
+    background: url("../images/ship_2.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 1024px;
+    animation: hj 500ms steps(4) infinite;
+}
+.ys{
+    height: 80px;
+    width: 80px;
+    background: url("../images/aestroid_brown.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 1024px;
+    animation: sz 3s linear infinite;
+    opacity: 1;
+}
+@keyframes sz {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+.nl{
+    height: 40px;
+    width: 40px;
+    background: url("../images/nl.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+.q1{
+    width: 100px;
+    height: 100px;
+    left: 1024px;
+    top: 80px;
+    position: absolute;
+    background: url("../images/008-earth-globe.png") no-repeat;
+    background-size: cover;
+    animation: qq 10s linear infinite;
+}
+@keyframes qq {
+    0%{
+        left: 1024px;
+    }100%{
+    left: -100px;
+         }
+}
+.q2{
+    width: 100px;
+    height: 100px;
+    left: 1024px;
+    top: 230px;
+    position: absolute;
+    background: url("../images/004-science-1.png") no-repeat;
+    background-size: cover;
+    animation: q2 7s linear infinite;
+}
+@keyframes q2 {
+    0%{
+        left: 1024px;
+    }100%{
+         left: -100px;
+     }
+}
+.q3{
+    width: 50px;
+    height: 50px;
+    left: 1024px;
+    top: 380px;
+    position: absolute;
+    background: url("../images/005-science.png") no-repeat;
+    background-size: cover;
+    animation: q2 5s linear infinite;
+}
+.box5{
+    width: 1024px;
+    height: 768px;
+    position: relative;
+    /*background-color: black;*/
+    background: url("../images/background-4.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: -200px;
+    display: none;
+}
+.box5 img{
+    position: absolute;
+    top: 160px;
+    left: 390px;
+}
+.box5 input{
+    width: 180px;
+    height: 50px;
+    font-size: 35px;
+    color: #ff4f19;
+    border: 0;
+    border-bottom: 2px solid #ff4f19;
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 340px;
+    left: 425px;
+    /*display: none;*/
+}
+.bt{
+    width: 80px;
+    height: 30px;
+    background-color: #ff4f19;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 400px;
+    left: 470px;
+}
+.bt:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.box6{
+    width: 1024px;
+    height: 768px;
+    background-color: black;
+    color: white;
+    display: none;
+}
+.biaoge{
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+.biaoge table{
+    margin: auto;
+    border: 1px solid white;
+}
+.biaoge table tr td{
+    margin-left: 100px;
+}

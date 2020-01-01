@@ -1,0 +1,37 @@
+创建方式：
+1.1 继承 Thread
+    子类重写run方法
+
+1.2 实现Runnable
+
+    线程生命周期：出生状态-start()--就绪状态-获得/失去CPU--运行状态---休眠状态---阻状态---死亡状态---等待状态
+
+
+    线程的并发
+    并发的问题解决方案：
+    同步:使共享资源同时只能有一个线程使用<线程安全>
+        synchronized(锁对象){    //   :   在run()方法中；线程在被多条语句操作；被多个线程所共享
+            //操作共享资源的代码
+        }
+    同步方法 synchronized void  a ()
+
+    线程间的通信
+        线程间同行共享数据一定要有synchronized
+        一定要有wait()和notify()，而且一定是成对出现
+        两个线程的实现一定是在while(true)里面
+
+    优先级
+        setPriority() [1--10]
+
+    礼让
+        yield()
+
+    加入join()
+    中断    while(true){ if( isContinue() ) }
+            interrupt()
+
+    线程池
+        实现Runnable接口
+        创建一个类，实现RUnnable接口，重写run方法，设置线程任务
+        调用ExecutorSerice中的submit，传递线程任务（实现类），开启线程，执行run方法
+        调用ExecutorSerice中的shutdown销毁线程池（不建议）
