@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>test</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var width = screen.width;
+		var height = screen.height;
+		var can = document.createElement("canvas");
+		can.width = 1100;
+		can.height = 700;
+		can.style.position = "absolute";
+		can.style.backgroundColor = "#222";
+		can.style.left = (width - can.width) / 2 + "px";
+		document.body.appendChild(can);
+		
+		var g = can.getContext("2d");
+		
+		g.translate(200,200);
+		var deg = 360;
+		setInterval(function(){
+			rotate(deg*180/Math.PI);
+			deg/4;
+		},100);
+		
+		var rotate = function (deg){
+			g.rotate(deg);
+			g.fillStyle = "#ff3";
+			g.fillRect(-50,-50,100,100);
+			g.clearRect(-50,-50,100,100);
+			g.beginPath();
+			g.moveTo(-100,-100);
+			g.lineTo(100,100);
+			g.moveTo(-100,100);
+			g.lineTo(100,-100);
+			g.closePath();
+			g.strokeStyle = "#00ff00";
+			g.stroke();
+		}
+		
+		
+	</script>
+</html>

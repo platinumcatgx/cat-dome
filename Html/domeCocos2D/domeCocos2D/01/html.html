@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+
+		<tr>
+			<td>通行证用户名：</td>
+			<td><input type="text" maxleng="10" id="text1" onblur="a1()"> </td>
+			<td>(1.由字母,数字,下划线,点组成.2.可包含a-z、0-9和下划线) </td>
+		</tr>
+		<script type="text/javascript">
+			function a1() {
+				var text1 = document.getElementById("text1")
+				text1.style.border = "solid 1px"
+				var i = text1.value
+				if (i == "")
+					text1.style.borderColor = "red"
+				else
+					text1.style.borderColor = "aqua"
+			}
+		</script>
+
+	</body>
+</html>

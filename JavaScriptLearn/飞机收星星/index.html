@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞机躲鸟</title>
+    <link rel="stylesheet" href="C.css">
+    <script src="JQuery/jquery-3.2.1.js"></script>
+</head>
+<body>
+<div class="box1">
+    <div class="box2">
+        <div class="box-text">
+            <h1>How to Play</h1>
+            <p>1. Move the airplane using the arrows keys;</p>
+            <p>2. The timer present the time lapsed;</p>
+            <p>3. The fuel counter show the remain fuel;</p>
+            <p>4. During the flight, the aircraft need to avoid the birds that are presented in the sky. If the airplane hit
+                a bird, the game is over;</p>
+            <p>5. During the flight, the aircraft need to collect fuel and stars in the sky;</p>
+            <p>6. You can pause the game clicking in a button pause, or pressing the space bar.</p>
+            <p>7. Go beyond all limits;</p>
+            <p>Flight in Sky Angel Challenge...</p>
+            <button class="btn">Start Game</button>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <img src="./images/logo.png" alt="" class="logo">
+    </div>
+</div>
+<div class="box7">
+    <div class="all">
+        <div class="box8">
+            <img src="./images/logo.png" alt="" class="logo1">
+            <div class="tp1">
+                <div class="xx">
+                    <div class="xximg"></div>
+                    <div class="xxs" style="width: 40px;height: 20px"></div>
+                </div>
+                <div class="time">
+                    <img src="./images/time.png" alt="" class="img">
+                    <div class="times" style="width: 40px;height: 20px"></div>
+                </div>
+                <div class="you">
+                    <img src="./images/parachute.png" alt="" class="bt">
+                </div>
+            </div>
+            <div class="youfu">
+                <div class="youzi"></div>
+            </div>
+            <div class="youshu">15</div>
+        </div>
+    </div>
+    <div class="game">
+        <div class="box9">
+            <div class="box4"></div>
+            <div class="box5"></div>
+        </div>
+        <audio src="./sound/background.mp3" class="bgmusic"></audio>
+        <audio src="./sound/hit.mp3" class="hitmusic"></audio>
+        <audio src="./sound/star.mp3" class="starmusic"></audio>
+        <audio src="./sound/finish.mp3" class="finishmusic"></audio>
+
+
+    </div>
+</div>
+<div class="name">
+    <div class="img">
+        <img src="./images/logo.png" alt=""><br>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="name" required class="text">
+<!--        <input type="text">-->
+    </div>
+    <br>
+    <button id="tijiao">提交</button>
+
+</div>
+<div class="table">
+
+</div>
+<script src="JQuery/C.js"></script>
+<script>
+    $("#tijiao").click(function () {
+        let datas = [$(".text").val(),times,xx]
+        $.ajax({
+            url:"../php/index.php"
+        })
+    })
+</script>
+</body>
+</html>

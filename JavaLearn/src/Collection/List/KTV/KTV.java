@@ -3,6 +3,7 @@ package Collection.List.KTV;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+
 public class KTV {
 
     Scanner sr = new Scanner(System.in);

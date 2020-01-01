@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>tank war</title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/base.js" ></script>
+	<script type="text/javascript" src="js/wall.js" ></script>
+	<script type="text/javascript" src="js/boom.js" ></script>
+	<script type="text/javascript" src="js/stage.js" ></script>
+	<script type="text/javascript" src="js/util.js" ></script>
+	<script type="text/javascript" src="js/tank.js" ></script>
+	<script type="text/javascript" src="js/missile.js" ></script>
+	<script type="text/javascript" src="js/daoju.js" ></script>
+	<script type="text/javascript" src="js/mm.js" ></script>
+	<script type="text/javascript" src="js/dilei.js" ></script>
+	<script type="text/javascript" src="js/feiji.js" ></script>
+	<script type="text/javascript" src="js/zhadan.js" ></script>
+	<script type="text/javascript">
+		var st = new Stage();
+		var logo = new Logo((bu.width-900)/2, (bu.height-430)/2 + 50, 900,430);
+		var _x = logo.x;
+		var _y = logo.y + 90 ;
+		var l1 = new ZhadanBig(_x, _y);
+		_x = logo.x + 730;
+		var l2 = new ZhadanBig(_x, _y);
+		var wo = new Wojun(440, bu.height * 0.8);
+		var mm = new Meimei( (bu.width-60)/2, bu.height-96 , 60, 96);
+		st.render();
+		initWall();		// 初始化一排墙
+		initEnemy();	// 初始化一排敌军
+		initHome();		// 初始化家
+		bf("start.mp3");
+	</script>
+</html>

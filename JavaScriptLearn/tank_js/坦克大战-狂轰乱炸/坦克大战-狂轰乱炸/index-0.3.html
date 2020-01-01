@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>坦克大战-v0.3</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var BEIJING = "#222";
+		var width = screen.width;
+		var height = screen.height;
+		var can = document.createElement("canvas");
+		can.width = 1100;
+		can.height = 700;
+		can.style.position = "absolute";
+		can.style.backgroundColor = BEIJING;
+		can.style.left = (width - can.width) / 2 + "px";
+		document.body.appendChild(can);
+		
+		var g = can.getContext("2d");
+		var UNIT 	= 0;		// 每个物体的编号
+		var WOJUN 	= "我军";
+		var QIANG 	= "墙";
+		var CMD		= "指挥官";
+		var DIJUN 	= "敌军";
+		var ZIDAN	= "子弹";
+		var DILEI	= "地雷";
+		var DAOJU	= "道具";
+		var TUPIAN	= "图片";
+		
+		var TANK_W = 40;
+		var TANK_H = 40;
+		var DI_W = 40;
+		var DI_H = 40;
+		var WO_IMG = "img/tU.gif";
+		var DI_IMG = "img/dD.gif";
+		
+		function Stage(){
+			this.data = [];
+		}
+		
+		Stage.prototype.add = function(o){
+			this.data.push(o);	// 把对象o扔进数组
+		}
+		
+		Stage.prototype.remove = function(o){
+			var index = this.data.indexOf(o);
+			if ( index != -1 ){
+				this.data.splice(index, 1);		// 从数组中删除一个元素
+			}
+		}
+		
+		Stage.prototype.render = function(){	// 屏幕重复渲染
+			var list = this.data;
+			function loop(){
+				// 清屏
+				g.fillStyle = BEIJING;
+				g.fillRect(0, 0, can.width , can.height );
+				
+				list.forEach(function(o){
+					o.show();
+				});
+				requestAnimationFrame(loop);
+			}
+			
+			loop();
+		}
+		
+		
+		/**父类**/
+		function Base(x, y, w, h, src, type) {
+			this.x = x;
+			this.y = y;
+			this.w = w;
+			this.h = h;
+			this.src = src;				// 图片名
+			this.type = type;			// 类别
+			this.life = 100;			// 生命值
+			this.index = UNIT ++;		// 唯一的编号
+			this.img = new Image();
+			this.img.src = this.src;
+			this.show = function(){
+				g.drawImage(this.img, this.x, this.y, this.w, this.h);
+				if ( this.type == WOJUN || this.type == DIJUN || this.type == QIANG || this.type == CMD ){
+					this.blood();
+				}
+			}
+		}
+		
+		function Youxuetiao(x, y, w, h, src, type) {
+			var o = new Base(x, y, w, h, src, type);
+			o.blood = function(){		// 绘制本对象的血条
+				if ( o.life <= 0 ) return;
+				g.fillStyle = "red";
+				if ( o.life > 80 ) g.fillStyle = "springgreen";
+				else if ( o.life > 60 ) g.fillStyle = "yellow";
+				else if ( o.life > 40 ) g.fillStyle = "orangered";
+				g.fillRect(o.x, o.y-5, o.life / 100 * o.w , 4);
+			}
+			return o;
+		}
+		
+		function Tank(x, y, w, h, src, type, speed, gong, fang, dir){
+			var o = new Youxuetiao(x, y, w, h, src, type);
+			o.speed = speed;
+			o.gong = gong;
+			o.fang = fang;
+			o.dir = dir;		// 坦克的坦向 0123 上下左右
+			o.left = false;
+			o.right = false;
+			o.up = false;
+			o.down = false;
+			return o;
+		}
+		function Wojun(x, y) {
+			var o = new Tank(x, y, TANK_W, TANK_H, WO_IMG, WOJUN, 3, 0, 0, 0);
+			o.dilei = 2;
+			o.fuhuo = 3;
+			return o;
+		}
+		function Dijun(x, y) {
+			var o = new Tank(x, y, DI_W, DI_H, DI_IMG, DIJUN, 3, 0, 0, 1);
+			return o;
+		}
+		
+		// 定义一个存储器对象
+		var stage = new Stage();
+		
+		var wo = new Wojun(300, 600);
+		var d = new Dijun(350, 100);
+		
+		stage.add(wo);
+		stage.add(d);
+		
+		stage.render();
+		
+		setInterval(function(){
+			wo.x += 5;
+		}, 200);
+	</script>
+</html>

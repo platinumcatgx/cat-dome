@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #39c;
+}
+.box1{
+    width: 1024px;
+    height: 768px;
+    margin: 90px auto;
+    position: relative;
+}
+.box2{
+    height: 600px;
+    width: 100%;
+    background-color: #fff;
+}
+.box-text{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    line-height: 30px;
+    padding: 50px 100px 0 200px;
+}
+.box-text>*{
+    filter: opacity(0);
+    animation: p 0.5s forwards;
+}
+@keyframes p {
+    0%{
+        transform: translate(-100px,-100px);
+        filter: opacity(0);
+    }
+    100%{
+        transform: none;
+        filter: opacity(1);
+    }
+}
+.box-text h1{
+    margin-bottom: 20px;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #f90;
+    color: #fff;
+}
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.box3{
+    width: 100%;
+    height: 170px;
+    position: relative;
+    background-color: #99ccff;
+}
+.box5{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 170px;
+    background-image: url("./images/bg-cloud-2.png") ;
+    background-size: cover;
+    animation: dh 10s linear infinite;
+    filter: drop-shadow(0 0 30px #9cf);
+}
+.box4{
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 170px;
+    background-image: url("./images/bg-cloud-1.png") ;
+    background-size: cover;
+    animation: dh 20s linear infinite;
+    filter: drop-shadow(0 0 30px #9cf);
+}
+.box6{
+    position: absolute;
+    top: -160px;
+    width: 100%;
+    height: 170px;
+    background-image: url("./images/bg-cloud-3.png") ;
+    background-size: cover;
+    /*animation: dh 10s linear infinite;*/
+    /*filter: drop-shadow(0 0 30px #9cf);*/
+    background-color: #99ccff;
+}
+.logo{
+    height: 240px;
+    margin-left: 20px;
+    position: absolute;
+    top: -505px;
+    /*animation: logo 3s infinite;*/
+}
+/*@keyframes logo {*/
+    /*0%{*/
+    /*transform: translate(0deg ,0deg);*/
+    /*}100%{*/
+             /*transform: translate(180deg,50deg);*/
+         /*}*/
+/*}*/
+@keyframes dh {
+    0%{
+        background-position-x: 0;
+    }100%{
+             background-position-x: -1020px;
+         }
+}
+.box7{
+    width: 1024px;
+    height: 768px;
+    margin: 80px auto;
+    position: relative;
+    display: none;
+    background: linear-gradient(#79c, #9cf);
+}
+.all{
+    width: 100%;
+    height: 150px;
+}
+.box8{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: flex;
+}
+.xximg{
+    width: 40px;
+    height: 40px;
+    background: url("./images/xx.png");
+    background-size: cover;
+}
+/*[class^=xximg].d{*/
+/*    animation: xxd 1s step(8) infinite;*/
+/*}*/
+/*@keyframes xxd {*/
+/*    0%{*/
+/*        background: url("./images/c/twitter_fave_rectangle.png");*/
+/*        background-size: cover;*/
+/*        background-position-x: -512px;*/
+/*    }100%{*/
+/*             background: url("./images/c/twitter_fave_rectangle.png");*/
+/*             background-size: cover;*/
+/*             background-position-x: 0px;*/
+/*         }*/
+/*}*/
+.times,.xxs,.youshu{
+    font-size: 20px;
+    text-align: center;
+}
+.youfu{
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    top: 45px;
+    left: 90px;
+    overflow: hidden;
+}
+.youzi{
+    width: 60px;
+    height: 30px;
+    background-color: red;
+}
+.youshu{
+    width: 40px;
+    height: 20px;
+    /*background-color: red;*/
+    position: relative;
+    top: 80px;
+    left: 10px;
+}
+.logo1{
+    height: 120px;
+    margin: 20px 10px;
+}
+.tp1{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    margin-top: 30px;
+}
+.tp1>div{
+    width: 50%;
+    height: 100%;
+    margin-left: 50px;
+}
+.img{
+    width: 40px;
+}
+.game{
+    width: 100%;
+    height: 618px;
+    position: relative;
+}
+.box9{
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    bottom: 0px;
+}
+.fly{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 35%;
+    background: url("./images/player.png");
+    animation: fly 0.5s steps(4) infinite;
+}
+@keyframes fly {
+    0%{
+        background-position-x: -400px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+[class^=fly].left{
+    animation: left 2s infinite;
+}
+@keyframes left {
+    30%{
+        transform: rotate(-30deg);
+    }    100%{
+                 transform: rotate(0deg);
+             }
+}
+
+
+[class^=fly].right{
+    animation: right 2s infinite;
+}
+@keyframes right {
+    30%{
+        transform: rotate(30deg);
+    }    100%{
+             transform: rotate(0deg);
+         }
+}
+
+.brid-yellow{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    left: 1024px;
+    background: url("./images/brid-yellow.png");
+    animation: liaod 0.5s steps(4) infinite;
+}
+.brid-red{
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    left: 1024px;
+    background: url("./images/brid-red.png");
+    animation: liaod 0.5s steps(4) infinite;
+    /*transition: all 2s;*/
+}
+@keyframes liaod {
+    0%{
+        background-position-x: -480px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+[class^=xx].shan{
+    animation: xxshan 0.5s infinite;
+}
+@keyframes xxshan {
+    0%{
+        background: url("./images/c/twitter_fave_rectangle.png") no-repeat;
+        background-size: cover;
+        background-position-x: 0;
+    }100%{
+             background: url("./images/c/twitter_fave_rectangle.png") no-repeat;
+             background-size: cover;
+    background-position-x: -512px;
+         }
+}
+
+
+[class^=brid].dead {
+    animation: fallDown 2s forwards;
+}
+
+@keyframes fallDown {
+    30% {
+        transform: rotate(30deg);
+        filter: grayscale(100%);
+    }
+    100% {
+        transform: translateY(10px) rotate(30deg);
+        filter: grayscale(100%);
+    }
+}
+.xxl{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url("./images/xx.png") no-repeat;
+    background-size: cover;
+    animation: xx 2s infinite linear;
+}
+
+@keyframes xx {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(720deg);
+    }
+}
+
+
+.youl{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: url("./images/parachute.png");
+    background-size: cover;
+    animation: you 2s linear infinite;
+}
+
+@keyframes you {
+    0%{
+        transform: rotate(0deg);
+    }30%{
+    transform: rotate(30deg);
+         }100%{
+    transform: rotate(-30deg);}
+}
+.name{
+    width: 1024px;
+    height: 768px;
+    margin: 80px auto;
+    background-color: white;
+    display: none;
+    /*background: url("./logo/SkyAngel.png");*/
+    /*background-size: cover;*/
+}
+.name .img{
+    width: 140px;
+    height: 300px;
+    margin: auto;
+}
+.name .input{
+    width: 202px;
+    margin: auto;
+}
+.name .input input{
+    width: 200px;
+    height: 35px;
+}
+#tijiao{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: orange;
+    border-radius: 5px;
+    margin-left: 450px;
+}
+#tijiao:hover{
+    cursor: pointer;
+}
+.table{
+    width: 1024px;
+    height: 768px;
+    margin: 80px auto;
+    background-color: white;
+    display: none;
+
+}

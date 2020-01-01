@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>js</title>
+		<meta id="" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+
+	<body>
+		
+		<form action="#" method="post">
+			姓名
+			<input type="text" id="xm" name="xm"/><br>
+			性别
+			<input type="radio" id="xb" name="xb"/>男
+			<input type="radio" id="xb2" name="xb"/>女<br>
+			年龄
+			<input type="text" id="nn" name="nn" /><br>
+			联系电话
+			<input type="text" id="dh" name="dh"/><br>
+			工作城市
+			<input type="test" id="cs" name="cs"/><br>
+			工作类型
+			<input type="text" id="lx" name="lx"/><br>
+			是否结婚
+			<input type="radio" id="jh" name="jh"/>是
+			<input type="radio" id="jh2" name="jh"/>否<br>
+			<input type="submit" value="提交" onclick="yz()"/>
+			<input type="button" value="清空" onclick="qk()"/>
+		</form>
+		
+
+		
+		<script type="text/javascript">
+			function yz(){
+				var xm = document.getElementById("xb2").value;
+				alert(xm)
+			}
+			
+			function qk(){}
+		</script>
+	</body>
+
+</html>
