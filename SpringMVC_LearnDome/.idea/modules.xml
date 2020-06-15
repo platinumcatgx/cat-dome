@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dome_1/Dome_1.iml" filepath="$PROJECT_DIR$/Dome_1/Dome_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dome_2/Dome_2.iml" filepath="$PROJECT_DIR$/Dome_2/Dome_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dome_3/Dome_3.iml" filepath="$PROJECT_DIR$/Dome_3/Dome_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dome_4_File/Dome_4_File.iml" filepath="$PROJECT_DIR$/Dome_4_File/Dome_4_File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dome_4_FileTomcat/Dome_4_FileTomcat.iml" filepath="$PROJECT_DIR$/Dome_4_FileTomcat/Dome_4_FileTomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dome_5/Dome_5.iml" filepath="$PROJECT_DIR$/Dome_5/Dome_5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dome_6/Dome_6.iml" filepath="$PROJECT_DIR$/Dome_6/Dome_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebDome_1/WebDome_1.iml" filepath="$PROJECT_DIR$/WebDome_1/WebDome_1.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--    配置spring的IOC,把service对象配置进来-->
+    <bean id="accountservice" class="gx.service.impl.AccountService"></bean>
+
+<!--
+    Spring中基于XML中的AOP配置
+    1.把通知的bean也交给spring'管理
+
+    2.使用aop:config标签开始AOP的配置
+
+    3.使用aop:aspect标签表明开始配置切面
+        id属性是给切面一个唯一标志
+        ref：指定通知类bean的logger"
+    4.在aop：aspect标签内部使用对应标签来配置通知类型
+        示例中是让printLog方法在切入点之前执行，所以是前置通知
+            aop：before：表示配置前置通知
+            method属性：用于指定logger类中哪个方法是前置通知
+            pointcut属性：用于指定切入点表达式，改表达式的含义是指定业务层中哪些方法增强
+
+        切入点表达式的写法：
+            关键字:execution(表达式)
+            表达式:
+                访问修饰符 返回值 全限定类名.方法名(参数列表)
+
+            访问修饰符,可以省略
+            返回值可以使用通配符,表示任意返回值
+            包名可以使用通配符,表示任意包,有几级包,就需要写几个*
+                可以使用..表示当前包及其子包
+            类名和方法,都可以使用'*',表示通配
+            参数列表:
+                可以直接写数据类型:
+                    基本类型直接写名称
+                    引用类型写 包名.类名 的方式 java.lang.String
+                可以使用通配符表示任意类型,但是必须有参数
+                可以使用..表示有无参数均可,有参数可以是任意类型
+            全通配写法:[尽量不要使用]
+                * *..*.*(..)
+            实际开发中切入点表达式的通常写法:
+                切到业务层实现类的所有方法
+                * gx.service.impl.*.*(..)
+    -->
+<!--    配置Logger类-->
+    <bean id="logger" class="gx.utils.Logger"></bean>
+    <aop:config>
+        <aop:aspect id="logAdvice" ref="logger">
+<!--            配置通知类型,并且建立通知方法和切入点方法的关联-->
+            <aop:before method="printLog"  pointcut="execution(* gx.service.impl.*.*(..))"></aop:before>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

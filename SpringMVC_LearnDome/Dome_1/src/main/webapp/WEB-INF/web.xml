@@ -1,0 +1,32 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-username>Archetype Created Web Application</display-username>
+
+  <servlet>
+    <servlet-username>dispatcherServlet</servlet-username>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-username>contextConfigLocation</param-username>
+      <param-value>classpath:bean.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-username>dispatcherServlet</servlet-username>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+<!--  配置web方式的servlet-->
+<!--  <servlet>-->
+<!--    <servlet-username>WebServlet</servlet-username>-->
+<!--    <servlet-class>gx.controller.WebServlet</servlet-class>-->
+<!--  </servlet>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-username>WebServlet</servlet-username>-->
+<!--    <url-pattern>/web</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+</web-app>

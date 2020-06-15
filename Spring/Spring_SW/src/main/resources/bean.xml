@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--数据源-->
+    <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql:///test"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="1234"></property>
+    </bean>
+
+    <!--dao层实现类-->
+    <bean id="deptDao" class="io.github.platinumcatgx.dao.impl.DeptDaoImpl">
+        <property name="dataSource" ref="datasource"></property>
+    </bean>
+
+    <!--service层实现类-->
+    <bean id="ds" class="io.github.platinumcatgx.service.impl.DeptServiceImpl">
+        <property name="deptDao" ref="deptDao"></property>
+    </bean>
+
+<!--    在这里使用的是SpringJDBC,所以用DataSourceTransactionManager-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<!--        注入数据源-->
+        <property name="dataSource" ref="datasource"></property>
+    </bean>
+<!--    配置事务-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+<!--        配置事务的属性-->
+        <tx:attributes>
+<!--            <tx:method name="find*" read-only="true" propagation="SUPPORTS"/>-->
+            <tx:method name="*" read-only="false" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+<!--    配置切入点表达式-->
+    <aop:config>
+        <aop:pointcut id="pt1" expression="execution(* io.github.platinumcatgx.service.impl.*.*(..))"/>
+        <!--建立事务的通知和切入点表达式的关系-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt1"></aop:advisor>
+    </aop:config>
+
+</beans>

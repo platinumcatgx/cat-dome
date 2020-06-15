@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        td{
+            font-size: 14px;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            border-bottom: 1px solid #666;
+            border-right: 1px solid #666;
+        }
+        table{
+            border-left: 1px solid #666;
+            border-top: 1px solid #666;
+            margin: 0 auto;
+        }
+        body{
+            text-align: center;
+        }
+        input{
+            margin-top: 5px;
+        }
+    </style>
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function checks() {
+            var tdText=$("#myTable tr:eq(1)").find("td:eq(2)").text();
+                alert("该单元格的值是:"+tdText)
+        }
+    </script>
+</head>
+<body>
+<table border="0" id="myTable">
+    <tr>
+        <td bgcolor="#CCCCCC">姓名</td>
+        <td bgcolor="#CCCCCC">课程</td>
+        <td bgcolor="#CCCCCC">成绩</td>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>语文</td>
+        <td>96</td>
+    </tr>
+    <tr>
+        <td>张飞</td>
+        <td>数学</td>
+        <td>69</td>
+    </tr>
+    <tr>
+        <td>张三丰</td>
+        <td>英语</td>
+        <td>100</td>
+    </tr>
+</table>
+<input name="btn" type="button" value="第二行第三个单元格的内容" onclick="checks()" />
+</body>
+</html>
