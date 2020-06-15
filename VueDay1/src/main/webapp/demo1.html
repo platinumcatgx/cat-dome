@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>快速入门</title>
+    <script src="js/vuejs-2.5.16.js"></script>
+</head>
+<body>
+<div id="app">
+
+    {{message}}<!--vue的插值表达式,把data中定义的数据显示到次数-->
+    <br>
+    {{ false ? True : False }}
+    <!--插值表达式不支持声明变量,if等-->
+
+</div>
+</body>
+<script>
+    //view model
+    //创建vue对象
+    new Vue({//里面时json格式,完全支持Javascript表达式支持
+        el: "#app",//由vue接管id未app的区域
+        data: {
+            message: "hello vue",//不要加分号
+            True: "java",
+            False: "?????????"
+        }
+    })
+
+</script>
+</html>

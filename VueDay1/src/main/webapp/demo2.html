@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>v-on:click</title>
+    <script src="js/vuejs-2.5.16.js"></script>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <button v-on:click=" fun1('Vue v-on')">vue的onclick</button><!--v-on:事件, 定义事件-->
+</div>
+</body>
+<script>
+    //view model
+    new Vue({//key:value固定形式,key是vue固定的
+        el: "#app",
+        data: {
+            message: "hello vue"
+        },
+        methods: {//key是我们定义的方法名,value是方法
+            fun1: function (msg) {
+                alert("hello vue")
+                this.message=msg
+            }
+        }
+    })
+</script>
+</html> 
