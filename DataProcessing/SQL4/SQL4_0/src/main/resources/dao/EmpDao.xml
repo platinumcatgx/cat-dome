@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gx.dao.IEmpDao">
+
+    <select id="findAll" resultType="emp">
+        select * from emp
+    </select>
+
+    <select id="findById" resultType="emp" parameterType="Integer">
+        select * from emp where deptno = #{deptno}
+    </select>
+</mapper>

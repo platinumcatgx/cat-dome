@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gx1.dao.IEmpDao">
+
+    <sql id="def">
+        select * from empTest
+    </sql>
+
+    <resultMap id="empDept" type="gx1.domain.Emp">
+        <id column="empno" property="empno"/>
+        <result column="ename" property="ename"/>
+        <result column="job" property="job"/>
+        <result column="mgr" property="mgr"/>
+        <result column="hiredate" property="hiredate"/>
+        <result column="sal" property="sal"/>
+        <result column="comm" property="comm"/>
+        <result column="deptno" property="deptno"/>
+        <!-- collection 是用于建立一对多中集合属性的对应关系
+            ofType 用于指定集合元素的数据类型-->
+        <collection property="depts" ofType="dept">
+            <id column="deptno" property="deptno"/>
+            <result column="dname" property="dname"/>
+            <result column="loc" property="loc"/>
+        </collection>
+    </resultMap>
+
+    <select id="findAllEmp" resultMap="empDept">
+        select * from empTest right join dept on empTest.deptno=dept.deptno
+    </select>
+
+</mapper>

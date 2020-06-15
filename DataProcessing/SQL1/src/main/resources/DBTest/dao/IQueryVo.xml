@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DBTest.dao.IQueryVo">
+
+    <sql id="def">
+        select * from empTest
+    </sql>
+
+<!--    <foreach>标签用于遍历集合，它的属性：-->
+<!--    collection:代表要遍历的集合元素，注意编写时不要写#{}-->
+<!--    open:代表语句的开始部分-->
+<!--    close:代表结束部分-->
+<!--    item:代表遍历集合的每个元素，生成的变量名-->
+<!--    sperator:代表分隔符-->
+<!--    select * from empTest where empno in (?)-->
+    <select id="findInIds" resultType="Emp" parameterType="QueryVo">
+        <include refid="def"/>
+        <where>
+            <foreach collection="ids" open=" empno in ( " close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+</mapper>
