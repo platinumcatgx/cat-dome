@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gx1.dao.IDeptDao">
+
+    <sql id="def">
+        select * from dept
+    </sql>
+
+    <resultMap id="deptEmp" type="gx1.domain.Dept">
+        <id column="deptno" property="deptno"/>
+        <result column="dname" property="dname"/>
+        <result column="loc" property="loc"/>
+        <!-- 它是用于指定从表方的引用实体属性的 -->
+        <association property="empTest" javaType="empTest">
+            <id column="empno" property="empno"/>
+            <result column="ename" property="ename"/>
+            <result column="job" property="job"/>
+            <result column="mgr" property="mgr"/>
+            <result column="hiredate" property="hiredate"/>
+            <result column="sal" property="sal"/>
+            <result column="comm" property="comm"/>
+            <result column="deptno" property="deptno"/>
+        </association>
+    </resultMap>
+
+    <select id="findAllEmp" resultMap="deptEmp">
+        select dept.* , empTest.* from dept right join empTest on dept.deptno = empTest.deptno
+    </select>
+
+</mapper>
