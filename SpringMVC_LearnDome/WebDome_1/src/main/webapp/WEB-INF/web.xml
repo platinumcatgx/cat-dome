@@ -1,0 +1,15 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-username>Archetype Created Web Application</display-username>
+  <servlet>
+    <servlet-username>Servlet</servlet-username>
+    <servlet-class>gx.controller.Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-username>Servlet</servlet-username>
+    <url-pattern>/hi</url-pattern>
+  </servlet-mapping>
+</web-app>

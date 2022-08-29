@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="gx.*"></context:component-scan>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--    配置文件解析器-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760"></property>
+    </bean>
+
+    <!--    配置拦截器-->
+    <mvc:interceptors>
+        <!--        配置具体的拦截器-->
+        <mvc:interceptor>
+            <!--要拦截的具体的方法-->
+            <mvc:mapping path="/user/*"/>
+            <!--不要拦截的方法-->
+            <!--<mvc:exclude-mapping path=""/>-->
+
+            <!--配置拦截器对象            -->
+            <bean id="ljq" class="gx.controller.Ljq"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <!--    告诉前端控制器,哪些前端静态资源不拦截-->
+    <!--    <mvc:resources location="/css/" mapping="/css/**"/> &lt;!&ndash; 样式 &ndash;&gt;-->
+    <!--    <mvc:resources location="/img/" mapping="/img/**"/> &lt;!&ndash; 图片 &ndash;&gt;-->
+    <!--    <mvc:resources location="/js/" mapping="/js/**"/> &lt;!&ndash; javascript &ndash;&gt;-->
+
+    <mvc:annotation-driven enable-matrix-variables="true"/>
+
+</beans>

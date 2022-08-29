@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql:///test"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="1234"></property>
+    </bean>
+
+    <bean id="deptDao" class="gx.dao.impl.DeptDaoImpl">
+        <property name="dataSource" ref="datasource"></property>
+    </bean>
+    <bean id="ds" class="gx.ser.impl.DeptSerImpl">
+        <property name="deptDao" ref="deptDao"></property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="datasource"></property>
+    </bean>
+
+    <tx:advice id="txAdcvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="pt1" expression="execution(* gx.ser.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdcvice" pointcut-ref="pt1"></aop:advisor>
+    </aop:config>
+
+</beans>

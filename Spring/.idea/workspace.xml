@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05166b13-6d4d-4577-8926-15696dbf5e42" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/Spring_3/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_3/Spring_3_1/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_0/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_1/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_2/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_4/target/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/Spring-0/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_5_adviceType/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_6_AOP/target/" />
+    <ignored path="$PROJECT_DIR$/Test/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_JDBC/target/" />
+    <ignored path="$PROJECT_DIR$/Spring_SW/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/resources/bean.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spring_SW/src/test/java/test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/impl/DeptDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/DeptDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/service/impl/DeptServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/service/DeptService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SqlMapConfig" />
+        <option value="HTML File" />
+        <option value="SpringConfigAonn" />
+        <option value="SpringAOP" />
+        <option value="SpringXMLConfig" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Spring_3/src/main/java/gx/config/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/Spring_3/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_3/src/test/java/Test.java" />
+        <option value="$PROJECT_DIR$/Spring_4/src/main/java/Ro.java" />
+        <option value="$PROJECT_DIR$/Spring_4/src/main/java/gx/service/IAccountService.java" />
+        <option value="$PROJECT_DIR$/Spring_4/src/main/java/gx/service/impl/AccountService.java" />
+        <option value="$PROJECT_DIR$/Spring_4/src/main/java/gx/utils/Logger.java" />
+        <option value="$PROJECT_DIR$/Spring_4/src/test/java/main.java" />
+        <option value="$PROJECT_DIR$/Spring_4/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_4/src/main/resources/aop.XML" />
+        <option value="$PROJECT_DIR$/Spring_5_adviceType/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_5_adviceType/src/test/java/main.java" />
+        <option value="$PROJECT_DIR$/Spring_5_adviceType/src/main/resources/aop.XML" />
+        <option value="$PROJECT_DIR$/Spring_5_adviceType/src/main/java/gx/utils/Logger.java" />
+        <option value="$PROJECT_DIR$/Spring_6_AOP/src/main/java/gx/service/impl/AccountService.java" />
+        <option value="$PROJECT_DIR$/Spring_6_AOP/src/main/resources/aop.XML" />
+        <option value="$PROJECT_DIR$/Spring_6_AOP/src/main/java/gx/utils/Logger.java" />
+        <option value="$PROJECT_DIR$/Test/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/domain/emp.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/domain/chucun.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/dao/IChucun.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/dao/IEmp.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/dao/IEmpDao.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/dao/impl/empDao.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/resources/bean.XML" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/jdbcTemplate/JdbcTamplateDome4.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/resources/bean.xml" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/jdbcTemplate/JdbcTamplateDome.java" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/jdbcTemplate/JdbcTamplateDome3.java" />
+        <option value="$PROJECT_DIR$/Test/src/main/resources/bean.XML" />
+        <option value="$PROJECT_DIR$/Test/src/main/resources/bean2.XML" />
+        <option value="$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/jdbcTemplate/JdbcTamplateDome1.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/gx/serivce/impl/empSer.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/gx/serivce/impl/empSerImpl.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/gx/jdbcTemplate/JdbcTamplateDome4.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/gx/dao/impl/empDao.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/domain/Dept.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/deptDao.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/impl/depDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/impl/DepDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/serivce/DeptService.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/jdbc/JdbcDaoSupper.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/resources/bean.XML" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/DeptDao.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/impl/DeptDaoImpl.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/service/DeptService.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/service/impl/DeptServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/main/resources/bean.xml" />
+        <option value="$PROJECT_DIR$/Spring_SW/src/test/java/test.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../GJ/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\Pro\GJ\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Spring_SW" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Spring_SW" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1035" />
+  </component>
+  <component name="ProjectId" id="1ZCQcDSiQBBs3sifCHqBNFjo4E7" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope '项目文件'; set:项目文件; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Spring" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Pro\Java\Spring" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Spring" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Pro\Java\Spring" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Spring_SW" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Spring" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Pro\Java\Spring" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Spring_SW" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Spring" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Pro\Java\Spring" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Spring_SW" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Spring" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Pro\Java\Spring" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Spring_SW" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Spring" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Pro\Java\Spring" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Spring_SW" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Pro\Java\Spring\Spring_SW\src\main\java\gx" />
+      <recent name="D:\Pro\Java\Spring\Spring_SW\src\main\java" />
+      <recent name="D:\Pro\Java\Spring\Spring_6_AOP\src\main\resources" />
+      <recent name="D:\Pro\Java\Spring\Spring_6_AOP\src\main\java" />
+      <recent name="D:\Pro\Java\Spring\Spring_5_adviceType\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.platinumcatgx.domain" />
+      <recent name="gx.jdbcTemplate" />
+      <recent name="" />
+      <recent name="gx.dao.domain" />
+      <recent name="gx.servers.Impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Pro\Java\Spring\Spring_3\Spring_3_1\src" />
+      <recent name="D:\Pro\Java\Spring\src" />
+      <recent name="D:\Pro\Java\Spring\Spring_0\src\main\resources" />
+      <recent name="D:\Pro\Java\Spring\Spring_0\src\main" />
+      <recent name="D:\Pro\Java\Spring\Spring_0\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.test.testFindAll">
+    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_SW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_SW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_SW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_SW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="testFindById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring_SW" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Spring_0_" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Spring_0_" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test.testFindAll" />
+        <item itemvalue="JUnit.test" />
+        <item itemvalue="JUnit.test.testDelete" />
+        <item itemvalue="JUnit.test.testUpdate" />
+        <item itemvalue="JUnit.test.testFindById" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05166b13-6d4d-4577-8926-15696dbf5e42" name="Default Changelist" comment="" />
+      <created>1583982466502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583982466502</updated>
+      <workItem from="1583982467882" duration="8084000" />
+      <workItem from="1583992276803" duration="3531000" />
+      <workItem from="1583995853126" duration="10684000" />
+      <workItem from="1584099066264" duration="2164000" />
+      <workItem from="1584102300072" duration="4715000" />
+      <workItem from="1584199905603" duration="3277000" />
+      <workItem from="1584240966859" duration="1272000" />
+      <workItem from="1584242806060" duration="748000" />
+      <workItem from="1584246515620" duration="7851000" />
+      <workItem from="1584255938574" duration="878000" />
+      <workItem from="1584256905846" duration="599000" />
+      <workItem from="1584258755752" duration="22261000" />
+      <workItem from="1584322520179" duration="3280000" />
+      <workItem from="1584326897039" duration="5771000" />
+      <workItem from="1584340386541" duration="37000" />
+      <workItem from="1584340925806" duration="3928000" />
+      <workItem from="1584583121695" duration="2961000" />
+      <workItem from="1584595163831" duration="1080000" />
+      <workItem from="1584596292843" duration="13590000" />
+      <workItem from="1584945280840" duration="3673000" />
+      <workItem from="1584964273944" duration="1324000" />
+      <workItem from="1585024403221" duration="5885000" />
+      <workItem from="1585114077123" duration="5965000" />
+      <workItem from="1585132195539" duration="1210000" />
+      <workItem from="1585359657718" duration="2221000" />
+      <workItem from="1585378419301" duration="11760000" />
+      <workItem from="1585394544221" duration="43000" />
+      <workItem from="1585394668824" duration="10000" />
+      <workItem from="1585398741775" duration="105000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="test_testFindAll - 2020.03.28 at 17h 43m 32s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 17h 43m 51s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test - 2020.03.28 at 17h 44m 01s.xml">
+      <configuration name="test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 17h 44m 08s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 17h 45m 14s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 17h 53m 03s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 19h 12m 50s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 19h 16m 18s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 19h 17m 02s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_testFindAll - 2020.03.28 at 19h 17m 20s.xml">
+      <configuration name="test.testFindAll" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="128907000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="835" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26742628" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="设计器" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42613637" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="bottom" id="MyBatis Log" order="12" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="13" />
+      <window_info anchor="bottom" id="Log Analyzer" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="16" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.328125" />
+      <window_info anchor="bottom" id="SOQL Query" order="18" />
+      <window_info anchor="bottom" id="Tail" order="19" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="调色板" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Word Book" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="RestServices" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1584341035981">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1584341035981" />
+    <state x="249" y="7" key="SettingsEditor" timestamp="1584343246818">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1584343246818" />
+    <state x="178" y="127" key="new project wizard" timestamp="1584341563351">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="178" y="127" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1584341563351" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Spring_4/src/main/java/gx/utils/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_6_AOP/src/test/java/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/dao/IAccountDao.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_0/src/main/resources/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/domain/Account.java" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/service/impl/AccountServiceImpl_OLD.java" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/service/IAccountService.java" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/utils/ConnectionUtils.java" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/utils/TransactionManager.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_0/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_6_AOP/src/main/resources/aop.XML">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/domain/emp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/domain/chucun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/dao/IEmpDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/src/test/java/com/itheima/test/AccountServiceTest.java" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/resources/bean.XML" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java" />
+    <entry file="file://$PROJECT_DIR$/Test/src/main/resources/bean2.XML" />
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/jdbcTemplate/JdbcTamplateDome4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/jdbcTemplate/JdbcTamplateDome3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/jdbcTemplate/JdbcTamplateDome1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/java/gx/dao/impl/empDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/dao/IEmpDao.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/domain/chucun.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_JDBC/src/main/resources/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/serivce/impl/empSerImpl.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/serivce/empSer.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/domain/emp.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/jdbcTemplate/JdbcTamplateDome3.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/jdbcTemplate/JdbcTamplateDome1.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/jdbcTemplate/JdbcTamplateDome4.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/gx/dao/impl/empDao.java" />
+    <entry file="file://$PROJECT_DIR$/Spring_SW/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/jdbc/JdbcDaoSupper.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.2.4.RELEASE/spring-jdbc-5.2.4.RELEASE.jar!/org/springframework/jdbc/core/support/JdbcDaoSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13.jar!/org/junit/runner/RunWith.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/domain/Dept.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.2.4.RELEASE/spring-jdbc-5.2.4.RELEASE.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.jdbc.datasource.DataSourceTransactionManager">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.jdbc.datasource.DataSourceTransactionManager</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.transaction.TransactionManager</node>
+            <node x="" y="">org.springframework.transaction.PlatformTransactionManager</node>
+            <node x="" y="">org.springframework.jdbc.datasource.DataSourceTransactionManager</node>
+            <node x="" y="">org.springframework.transaction.support.AbstractPlatformTransactionManager</node>
+            <node x="" y="">org.springframework.beans.factory.InitializingBean</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">org.springframework.transaction.support.ResourceTransactionManager</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="359.0" y="127.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.apache.ibatis.transaction.Transaction">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.apache.ibatis.transaction.Transaction</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">org.apache.ibatis.transaction.Transaction</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-252.0" y="6.0" />
+          <SelectedNodes>
+            <node>org.apache.ibatis.transaction.Transaction</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.transaction.PlatformTransactionManager">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.transaction.PlatformTransactionManager</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.transaction.TransactionManager</node>
+            <node x="" y="">org.springframework.transaction.PlatformTransactionManager</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="116.0" y="51.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/impl/DeptDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/dao/DeptDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/service/impl/DeptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/java/io/github/platinumcatgx/service/DeptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/test/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_SW/src/main/resources/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring_JDBC</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
