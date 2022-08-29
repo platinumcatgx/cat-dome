@@ -7,7 +7,7 @@
     <bean id="deptService" class="gx.servers.Impl.DeptService"></bean>
     <bean id="empService" class="gx.servers.Impl.EmpService"></bean>
 
-    <bean id="deptDao" class="gx.gx.dao.Impl.DeptDao"></bean>
-    <bean id="empDao" class="gx.gx.dao.Impl.EmpDao"></bean>
+    <bean id="deptDao" class="gx.dao.Impl.DeptDao"></bean>
+    <bean id="empDao" class="gx.dao.Impl.EmpDao"></bean>
 
 </beans>
